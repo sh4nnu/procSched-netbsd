@@ -1,0 +1,1139 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+100.00      0.01     0.01        2     5.00     5.00  je_malloc_tsd_boot1
+  0.00      0.01     0.00     1006     0.00     0.00  je_extent_heap_remove_first
+  0.00      0.01     0.00      871     0.00     0.00  __libc_mutex_unlock_stub
+  0.00      0.01     0.00      868     0.00     0.00  je_extent_heap_new
+  0.00      0.01     0.00      629     0.00     0.00  je_nstime_init
+  0.00      0.01     0.00      618     0.00     0.00  __libc_mutexattr_destroy
+  0.00      0.01     0.00      347     0.00     0.00  __libc_mutex_init
+  0.00      0.01     0.00      309     0.00     0.00  __libc_mutexattr_settype_stub
+  0.00      0.01     0.00      309     0.00     0.00  je_malloc_mutex_init
+  0.00      0.01     0.00      309     0.00     0.00  mutex_prof_data_init
+  0.00      0.01     0.00       51     0.00     0.00  strncmp
+  0.00      0.01     0.00       39     0.00     0.00  extent_recycle
+  0.00      0.01     0.00       39     0.00     0.00  extent_size_quantize_ceil
+  0.00      0.01     0.00       39     0.00     0.00  extent_size_quantize_floor
+  0.00      0.01     0.00       36     0.00     0.00  je_bin_init
+  0.00      0.01     0.00       36     0.00     0.00  je_div_init
+  0.00      0.01     0.00       26     0.00     0.00  je_extents_alloc
+  0.00      0.01     0.00       20     0.00     0.00  __libc_cond_init_stub
+  0.00      0.01     0.00       18     0.00     0.00  base_extent_bump_alloc_post
+  0.00      0.01     0.00       18     0.00     0.00  je_extent_heap_insert
+  0.00      0.01     0.00       17     0.00     0.00  __mmap
+  0.00      0.01     0.00       17     0.00     0.00  base_alloc_impl
+  0.00      0.01     0.00       17     0.00     0.00  mmap
+  0.00      0.01     0.00       17     0.00     0.00  os_pages_map
+  0.00      0.01     0.00       16     0.00     0.00  memset
+  0.00      0.01     0.00       15     0.00     0.00  je_bitmap_init
+  0.00      0.01     0.00       15     0.00     0.00  je_extent_alloc_mmap
+  0.00      0.01     0.00       15     0.00     0.00  je_pages_map
+  0.00      0.01     0.00       13     0.00     0.00  extent_alloc_core
+  0.00      0.01     0.00       13     0.00     0.00  extent_hook_post_reentrancy
+  0.00      0.01     0.00       13     0.00     0.00  extent_register_impl.constprop.65
+  0.00      0.01     0.00       13     0.00     0.00  extent_rtree_leaf_elms_lookup
+  0.00      0.01     0.00       13     0.00     0.00  extent_rtree_write_acquired.constprop.66
+  0.00      0.01     0.00       13     0.00     0.00  je_arena_extent_sn_next
+  0.00      0.01     0.00       13     0.00     0.00  je_base_alloc_extent
+  0.00      0.01     0.00       13     0.00     0.00  je_base_extent_hooks_get
+  0.00      0.01     0.00       13     0.00     0.00  je_extent_alloc
+  0.00      0.01     0.00       13     0.00     0.00  je_extent_alloc_wrapper
+  0.00      0.01     0.00       13     0.00     0.00  je_extent_avail_first
+  0.00      0.01     0.00       12     0.00     0.00  arena_bin_malloc_hard
+  0.00      0.01     0.00       12     0.00     0.00  extent_interior_register
+  0.00      0.01     0.00        7     0.00     0.00  je_rtree_ctx_data_init
+  0.00      0.01     0.00        6     0.00     0.00  __libc_rwlock_trywrlock
+  0.00      0.01     0.00        4     0.00     0.00  je_b0get
+  0.00      0.01     0.00        4     0.00     0.00  je_base_alloc
+  0.00      0.01     0.00        4     0.00     0.00  je_nstime_add
+  0.00      0.01     0.00        4     0.00     0.00  je_rtree_leaf_elm_lookup_hard
+  0.00      0.01     0.00        4     0.00     0.00  je_tsd_cleanup
+  0.00      0.01     0.00        4     0.00     0.00  memmove
+  0.00      0.01     0.00        3     0.00     0.00  __clock_gettime50
+  0.00      0.01     0.00        3     0.00     0.00  __envvarnamelen
+  0.00      0.01     0.00        3     0.00     0.00  __errno
+  0.00      0.01     0.00        3     0.00     0.00  __findenvvar
+  0.00      0.01     0.00        3     0.00     0.00  __getenvslot
+  0.00      0.01     0.00        3     0.00     0.00  __readlockenv
+  0.00      0.01     0.00        3     0.00     0.00  __sysctl
+  0.00      0.01     0.00        3     0.00     0.00  __unlockenv
+  0.00      0.01     0.00        3     0.00     0.00  getenv
+  0.00      0.01     0.00        3     0.00     0.00  je_extents_init
+  0.00      0.01     0.00        3     0.00     1.67  je_tsd_fetch_slow
+  0.00      0.01     0.00        3     0.00     1.11  malloc
+  0.00      0.01     0.00        3     0.00     2.22  malloc_init_hard
+  0.00      0.01     0.00        3     0.00     0.00  memcpy
+  0.00      0.01     0.00        3     0.00     0.00  munmap
+  0.00      0.01     0.00        3     0.00     0.00  nstime_update_impl
+  0.00      0.01     0.00        3     0.00     0.00  strcspn
+  0.00      0.01     0.00        3     0.00     0.00  strspn_x
+  0.00      0.01     0.00        3     0.00     0.00  sysctl
+  0.00      0.01     0.00        2     0.00     0.00  __cxa_atexit_internal
+  0.00      0.01     0.00        2     0.00     0.00  __sfvwrite
+  0.00      0.01     0.00        2     0.00     0.00  __sprint
+  0.00      0.01     0.00        2     0.00     0.00  __vfprintf_unlocked_l
+  0.00      0.01     0.00        2     0.00     0.00  arena_bind
+  0.00      0.01     0.00        2     0.00     0.00  arena_decay_deadline_init
+  0.00      0.01     0.00        2     0.00     0.00  arena_decay_reinit
+  0.00      0.01     0.00        2     0.00     0.00  atexit
+  0.00      0.01     0.00        2     0.00     0.00  background_thread_create_signals_masked.constprop.19
+  0.00      0.01     0.00        2     0.00     0.00  base_block_alloc
+  0.00      0.01     0.00        2     0.00     0.00  issetugid
+  0.00      0.01     0.00        2     0.00     0.00  je_arena_nthreads_inc
+  0.00      0.01     0.00        2     0.00     0.00  je_arena_tcache_fill_small
+  0.00      0.01     0.00        2     0.00     0.00  je_nstime_copy
+  0.00      0.01     0.00        2     0.00     0.00  je_nstime_idivide
+  0.00      0.01     0.00        2     0.00     0.00  je_nstime_ns
+  0.00      0.01     0.00        2     0.00     0.00  je_tcache_alloc_small_hard
+  0.00      0.01     0.00        2     0.00     0.00  je_tsd_slow_update
+  0.00      0.01     0.00        2     0.00     0.00  localeconv_l
+  0.00      0.01     0.00        2     0.00     0.00  sysconf
+  0.00      0.01     0.00        1     0.00     0.00  __cxa_finalize
+  0.00      0.01     0.00        1     0.00     0.00  __flockfile_internal
+  0.00      0.01     0.00        1     0.00     0.00  __fstat50
+  0.00      0.01     0.00        1     0.00     0.00  __funlockfile_internal
+  0.00      0.01     0.00        1     0.00     0.00  __libc_thr_keycreate_stub
+  0.00      0.01     0.00        1     0.00     0.00  __libc_thr_setspecific
+  0.00      0.01     0.00        1     0.00     0.00  __sinit
+  0.00      0.01     0.00        1     0.00     5.00  __smakebuf
+  0.00      0.01     0.00        1     0.00     0.00  __swhatbuf
+  0.00      0.01     0.00        1     0.00     0.00  __swsetup
+  0.00      0.01     0.00        1     0.00     0.00  __ultoa
+  0.00      0.01     0.00        1     0.00     0.00  _libc_init
+  0.00      0.01     0.00        1     0.00     0.00  a0ialloc
+  0.00      0.01     0.00        1     0.00     0.00  arena_dalloc_junk_small_impl
+  0.00      0.01     0.00        1     0.00     0.00  arena_init_locked
+  0.00      0.01     0.00        1     0.00     0.00  arena_new_create_background_thread
+  0.00      0.01     0.00        1     0.00     0.00  exit
+  0.00      0.01     0.00        1     0.00     0.00  getpagesize
+  0.00      0.01     0.00        1     0.00     0.00  ioctl
+  0.00      0.01     0.00        1     0.00     0.00  isatty
+  0.00      0.01     0.00        1     0.00     0.00  je_arena_boot
+  0.00      0.01     0.00        1     0.00     0.00  je_arena_choose_hard
+  0.00      0.01     0.00        1     0.00     0.00  je_arena_extent_alloc_large
+  0.00      0.01     0.00        1     0.00     0.00  je_arena_init
+  0.00      0.01     0.00        1     0.00     0.00  je_arena_malloc_hard
+  0.00      0.01     0.00        1     0.00     0.00  je_arena_new
+  0.00      0.01     0.00        1     0.00     0.00  je_arena_palloc
+  0.00      0.01     0.00        1     0.00     0.00  je_arena_set
+  0.00      0.01     0.00        1     0.00     0.00  je_arena_tdata_get_hard
+  0.00      0.01     0.00        1     0.00     0.00  je_background_thread_boot0
+  0.00      0.01     0.00        1     0.00     0.00  je_background_thread_boot1
+  0.00      0.01     0.00        1     0.00     0.00  je_base_boot
+  0.00      0.01     0.00        1     0.00     0.00  je_base_new
+  0.00      0.01     0.00        1     0.00     0.00  je_ctl_boot
+  0.00      0.01     0.00        1     0.00     0.00  je_extent_avail_new
+  0.00      0.01     0.00        1     0.00     0.00  je_extent_boot
+  0.00      0.01     0.00        1     0.00     0.00  je_extent_dss_boot
+  0.00      0.01     0.00        1     0.00     0.00  je_extent_dss_prec_get
+  0.00      0.01     0.00        1     0.00     0.00  je_large_malloc
+  0.00      0.01     0.00        1     0.00     0.00  je_large_palloc
+  0.00      0.01     0.00        1     0.00     0.00  je_malloc_initialized
+  0.00      0.01     0.00        1     0.00     0.00  je_malloc_mutex_boot
+  0.00      0.01     0.00        1     0.00     1.67  je_malloc_tsd_boot0
+  0.00      0.01     0.00        1     0.00     0.00  je_mutex_pool_init
+  0.00      0.01     0.00        1     0.00     0.00  je_pages_boot
+  0.00      0.01     0.00        1     0.00     0.00  je_rtree_new
+  0.00      0.01     0.00        1     0.00     0.00  je_tcache_arena_associate
+  0.00      0.01     0.00        1     0.00     0.00  je_tcache_boot
+  0.00      0.01     0.00        1     0.00     5.00  je_tsd_tcache_data_init
+  0.00      0.01     0.00        1     0.00     5.00  je_tsd_tcache_enabled_data_init
+  0.00      0.01     0.00        1     0.00     0.00  jemalloc_constructor
+  0.00      0.01     0.00        1     0.00     0.00  madvise
+  0.00      0.01     0.00        1     0.00     5.00  main
+  0.00      0.01     0.00        1     0.00     0.00  malloc_conf_init
+  0.00      0.01     0.00        1     0.00     0.00  malloc_init_hard_a0_locked
+  0.00      0.01     0.00        1     0.00     0.00  memchr
+  0.00      0.01     0.00        1     0.00     5.00  printf
+  0.00      0.01     0.00        1     0.00     0.00  profil
+  0.00      0.01     0.00        1     0.00     0.00  pthread_atfork
+  0.00      0.01     0.00        1     0.00     0.00  readlink
+  0.00      0.01     0.00        1     0.00     0.00  sbrk
+  0.00      0.01     0.00        1     0.00     0.00  snprintf
+  0.00      0.01     0.00        1     0.00     0.00  tcgetattr
+  0.00      0.01     0.00        1     0.00     5.00  vfprintf
+  0.00      0.01     0.00        1     0.00     0.00  vsnprintf
+  0.00      0.01     0.00        1     0.00     0.00  vsnprintf_l
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 100.00% of 0.01 seconds
+
+index % time    self  children    called     name
+                0.01    0.00       1/2           malloc_init_hard <cycle 1> [4]
+                0.01    0.00       1/2           je_tsd_tcache_data_init [6]
+[1]    100.0    0.01    0.00       2         je_malloc_tsd_boot1 [1]
+                0.00    0.00       1/4           je_tsd_cleanup [54]
+                0.00    0.00       1/16          memset [32]
+-----------------------------------------------
+[2]    100.0    0.00    0.01       2+5       <cycle 1 as a whole> [2]
+                0.00    0.01       3             malloc_init_hard <cycle 1> [4]
+                0.00    0.00       3             malloc <cycle 1> [13]
+                0.00    0.00       1             pthread_atfork <cycle 1> [121]
+-----------------------------------------------
+                                                 <spontaneous>
+[3]    100.0    0.00    0.01                 ___start [3]
+                0.00    0.00       1/1           main [9]
+                0.00    0.00       1/2           malloc_init_hard <cycle 1> [4]
+                0.00    0.00       2/2           __cxa_atexit_internal [910]
+                0.00    0.00       2/2           atexit [67]
+                0.00    0.00       1/1           exit [84]
+                0.00    0.00       1/1           _libc_init [924]
+                0.00    0.00       1/1           jemalloc_constructor [115]
+-----------------------------------------------
+                                   2             malloc <cycle 1> [13]
+                0.00    0.00       1/2           ___start [3]
+[4]     66.7    0.00    0.01       3         malloc_init_hard <cycle 1> [4]
+                0.01    0.00       1/2           je_malloc_tsd_boot1 [1]
+                0.00    0.00       1/1           je_malloc_tsd_boot0 [14]
+                0.00    0.00       8/871         __libc_mutex_unlock_stub [895]
+                0.00    0.00       1/1           malloc_init_hard_a0_locked [118]
+                0.00    0.00       1/2           sysconf [79]
+                0.00    0.00       1/1           je_background_thread_boot0 [97]
+                0.00    0.00       1/1           je_background_thread_boot1 [98]
+                0.00    0.00       1/1           je_malloc_mutex_boot [109]
+                0.00    0.00       1/4           je_tsd_cleanup [54]
+                0.00    0.00       1/2           je_tsd_slow_update [77]
+                                   1             pthread_atfork <cycle 1> [121]
+-----------------------------------------------
+                0.00    0.00       1/3           je_malloc_tsd_boot0 [14]
+                0.00    0.00       2/3           malloc <cycle 1> [13]
+[5]     50.0    0.00    0.01       3         je_tsd_fetch_slow [5]
+                0.00    0.01       1/1           je_tsd_tcache_enabled_data_init [7]
+                0.00    0.00       1/4           je_tsd_cleanup [54]
+                0.00    0.00       1/1           __libc_thr_setspecific [919]
+                0.00    0.00       1/7           je_rtree_ctx_data_init [49]
+-----------------------------------------------
+                0.00    0.01       1/1           je_tsd_tcache_enabled_data_init [7]
+[6]     50.0    0.00    0.01       1         je_tsd_tcache_data_init [6]
+                0.01    0.00       1/2           je_malloc_tsd_boot1 [1]
+                0.00    0.00       1/1           je_arena_palloc [94]
+                0.00    0.00       1/1           je_malloc_initialized [108]
+                0.00    0.00       1/871         __libc_mutex_unlock_stub [895]
+                0.00    0.00       1/1           je_tcache_arena_associate [113]
+-----------------------------------------------
+                0.00    0.01       1/1           je_tsd_fetch_slow [5]
+[7]     50.0    0.00    0.01       1         je_tsd_tcache_enabled_data_init [7]
+                0.00    0.01       1/1           je_tsd_tcache_data_init [6]
+                0.00    0.00       1/4           je_tsd_cleanup [54]
+                0.00    0.00       1/2           je_tsd_slow_update [77]
+-----------------------------------------------
+[8]     50.0    0.00    0.00       1+5       <cycle 2 as a whole> [8]
+                0.00    0.00       1             __smakebuf <cycle 2> [12]
+                0.00    0.00       2             __vfprintf_unlocked_l <cycle 2> [913]
+                0.00    0.00       1             __swsetup <cycle 2> [922]
+                0.00    0.00       1             snprintf <cycle 2> [124]
+                0.00    0.00       1             vsnprintf_l <cycle 2> [127]
+-----------------------------------------------
+                0.00    0.00       1/1           ___start [3]
+[9]     50.0    0.00    0.00       1         main [9]
+                0.00    0.00       1/1           printf [10]
+-----------------------------------------------
+                0.00    0.00       1/1           main [9]
+[10]    50.0    0.00    0.00       1         printf [10]
+                0.00    0.00       1/1           vfprintf [11]
+-----------------------------------------------
+                0.00    0.00       1/1           printf [10]
+[11]    50.0    0.00    0.00       1         vfprintf [11]
+                0.00    0.00       1/1           __vfprintf_unlocked_l <cycle 2> [913]
+                0.00    0.00       1/1           __flockfile_internal [915]
+                0.00    0.00       1/1           __funlockfile_internal [917]
+-----------------------------------------------
+                                   1             __swsetup <cycle 2> [922]
+[12]    50.0    0.00    0.00       1         __smakebuf <cycle 2> [12]
+                0.00    0.00       1/2           malloc <cycle 1> [13]
+                0.00    0.00       2/3           getenv [56]
+                0.00    0.00       1/1           __swhatbuf [921]
+                0.00    0.00       1/1           isatty [87]
+                                   1             snprintf <cycle 2> [124]
+-----------------------------------------------
+                                   2             pthread_atfork <cycle 1> [121]
+                0.00    0.00       1/2           __smakebuf <cycle 2> [12]
+[13]    33.3    0.00    0.00       3         malloc <cycle 1> [13]
+                0.00    0.00       2/3           je_tsd_fetch_slow [5]
+                0.00    0.00       2/2           je_tcache_alloc_small_hard [76]
+                0.00    0.00       1/1           je_arena_choose_hard [89]
+                                   2             malloc_init_hard <cycle 1> [4]
+-----------------------------------------------
+                0.00    0.00       1/1           malloc_init_hard <cycle 1> [4]
+[14]    16.7    0.00    0.00       1         je_malloc_tsd_boot0 [14]
+                0.00    0.00       1/3           je_tsd_fetch_slow [5]
+                0.00    0.00       1/1           __libc_thr_keycreate_stub [918]
+-----------------------------------------------
+                0.00    0.00      12/1006        arena_bin_malloc_hard [47]
+                0.00    0.00     994/1006        base_alloc_impl [29]
+[15]     0.0    0.00    0.00    1006         je_extent_heap_remove_first [15]
+-----------------------------------------------
+                0.00    0.00      36/868         je_bin_init [24]
+                0.00    0.00     232/868         je_base_new [100]
+                0.00    0.00     600/868         je_extents_init [57]
+[16]     0.0    0.00    0.00     868         je_extent_heap_new [16]
+-----------------------------------------------
+                0.00    0.00       1/629         je_arena_new [93]
+                0.00    0.00       2/629         background_thread_create_signals_masked.constprop.19 [68]
+                0.00    0.00       2/629         je_background_thread_boot1 [98]
+                0.00    0.00       2/629         arena_decay_deadline_init [65]
+                0.00    0.00       4/629         arena_decay_reinit [66]
+                0.00    0.00     618/629         mutex_prof_data_init [19]
+[17]     0.0    0.00    0.00     629         je_nstime_init [17]
+-----------------------------------------------
+                0.00    0.00       1/309         malloc_init_hard_a0_locked [118]
+                0.00    0.00       1/309         je_tcache_boot [114]
+                0.00    0.00       1/309         je_extent_boot [103]
+                0.00    0.00       1/309         je_ctl_boot [101]
+                0.00    0.00       1/309         je_base_new [100]
+                0.00    0.00       3/309         je_extents_init [57]
+                0.00    0.00       3/309         je_background_thread_boot1 [98]
+                0.00    0.00       6/309         je_arena_new [93]
+                0.00    0.00      36/309         je_bin_init [24]
+                0.00    0.00     256/309         je_mutex_pool_init [110]
+[18]     0.0    0.00    0.00     309         je_malloc_mutex_init [18]
+                0.00    0.00     618/871         __libc_mutex_unlock_stub [895]
+                0.00    0.00     618/618         __libc_mutexattr_destroy [896]
+                0.00    0.00     309/309         mutex_prof_data_init [19]
+                0.00    0.00     309/309         __libc_mutexattr_settype_stub [898]
+                0.00    0.00     309/347         __libc_mutex_init [897]
+-----------------------------------------------
+                0.00    0.00     309/309         je_malloc_mutex_init [18]
+[19]     0.0    0.00    0.00     309         mutex_prof_data_init [19]
+                0.00    0.00     618/629         je_nstime_init [17]
+-----------------------------------------------
+                0.00    0.00      51/51          __getenvslot [906]
+[20]     0.0    0.00    0.00      51         strncmp [20]
+-----------------------------------------------
+                0.00    0.00      13/39          je_extent_alloc_wrapper [45]
+                0.00    0.00      26/39          je_extents_alloc [26]
+[21]     0.0    0.00    0.00      39         extent_recycle [21]
+                0.00    0.00      78/871         __libc_mutex_unlock_stub [895]
+                0.00    0.00      39/39          extent_size_quantize_ceil [22]
+                0.00    0.00      13/13          extent_hook_post_reentrancy [37]
+                0.00    0.00       3/7           je_rtree_ctx_data_init [49]
+-----------------------------------------------
+                0.00    0.00      39/39          extent_recycle [21]
+[22]     0.0    0.00    0.00      39         extent_size_quantize_ceil [22]
+                0.00    0.00      39/39          extent_size_quantize_floor [23]
+-----------------------------------------------
+                0.00    0.00      39/39          extent_size_quantize_ceil [22]
+[23]     0.0    0.00    0.00      39         extent_size_quantize_floor [23]
+-----------------------------------------------
+                0.00    0.00      36/36          je_arena_new [93]
+[24]     0.0    0.00    0.00      36         je_bin_init [24]
+                0.00    0.00      36/309         je_malloc_mutex_init [18]
+                0.00    0.00      36/868         je_extent_heap_new [16]
+-----------------------------------------------
+                0.00    0.00       1/36          malloc_init_hard_a0_locked [118]
+                0.00    0.00      35/36          je_arena_boot [88]
+[25]     0.0    0.00    0.00      36         je_div_init [25]
+-----------------------------------------------
+                0.00    0.00       2/26          je_arena_extent_alloc_large [90]
+                0.00    0.00      24/26          arena_bin_malloc_hard [47]
+[26]     0.0    0.00    0.00      26         je_extents_alloc [26]
+                0.00    0.00      26/39          extent_recycle [21]
+-----------------------------------------------
+                0.00    0.00       1/18          je_base_new [100]
+                0.00    0.00      17/18          base_alloc_impl [29]
+[27]     0.0    0.00    0.00      18         base_extent_bump_alloc_post [27]
+                0.00    0.00      18/18          je_extent_heap_insert [28]
+-----------------------------------------------
+                0.00    0.00      18/18          base_extent_bump_alloc_post [27]
+[28]     0.0    0.00    0.00      18         je_extent_heap_insert [28]
+-----------------------------------------------
+                0.00    0.00       1/17          je_tcache_boot [114]
+                0.00    0.00       1/17          je_rtree_leaf_elm_lookup_hard [53]
+                0.00    0.00       1/17          je_background_thread_boot1 [98]
+                0.00    0.00       1/17          je_arena_new [93]
+                0.00    0.00      13/17          je_base_alloc_extent [42]
+[29]     0.0    0.00    0.00      17         base_alloc_impl [29]
+                0.00    0.00     994/1006        je_extent_heap_remove_first [15]
+                0.00    0.00      36/871         __libc_mutex_unlock_stub [895]
+                0.00    0.00      17/18          base_extent_bump_alloc_post [27]
+                0.00    0.00       1/2           base_block_alloc [69]
+-----------------------------------------------
+                0.00    0.00      17/17          os_pages_map [31]
+[30]     0.0    0.00    0.00      17         mmap [30]
+                0.00    0.00      17/17          __mmap [900]
+-----------------------------------------------
+                0.00    0.00       1/17          je_pages_boot [111]
+                0.00    0.00      16/17          je_pages_map [35]
+[31]     0.0    0.00    0.00      17         os_pages_map [31]
+                0.00    0.00      17/17          mmap [30]
+-----------------------------------------------
+                0.00    0.00       1/16          je_malloc_tsd_boot1 [1]
+                0.00    0.00       3/16          je_extents_init [57]
+                0.00    0.00      12/16          je_bitmap_init [33]
+[32]     0.0    0.00    0.00      16         memset [32]
+-----------------------------------------------
+                0.00    0.00       3/15          je_extents_init [57]
+                0.00    0.00      12/15          arena_bin_malloc_hard [47]
+[33]     0.0    0.00    0.00      15         je_bitmap_init [33]
+                0.00    0.00      12/16          memset [32]
+-----------------------------------------------
+                0.00    0.00       2/15          base_block_alloc [69]
+                0.00    0.00      13/15          extent_alloc_core [36]
+[34]     0.0    0.00    0.00      15         je_extent_alloc_mmap [34]
+                0.00    0.00      15/15          je_pages_map [35]
+-----------------------------------------------
+                0.00    0.00      15/15          je_extent_alloc_mmap [34]
+[35]     0.0    0.00    0.00      15         je_pages_map [35]
+                0.00    0.00      16/17          os_pages_map [31]
+                0.00    0.00       2/3           munmap [59]
+-----------------------------------------------
+                0.00    0.00      13/13          je_extent_alloc_wrapper [45]
+[36]     0.0    0.00    0.00      13         extent_alloc_core [36]
+                0.00    0.00      13/15          je_extent_alloc_mmap [34]
+-----------------------------------------------
+                0.00    0.00      13/13          extent_recycle [21]
+[37]     0.0    0.00    0.00      13         extent_hook_post_reentrancy [37]
+                0.00    0.00      13/13          je_base_extent_hooks_get [43]
+-----------------------------------------------
+                0.00    0.00      13/13          je_extent_alloc_wrapper [45]
+[38]     0.0    0.00    0.00      13         extent_register_impl.constprop.65 [38]
+                0.00    0.00      26/871         __libc_mutex_unlock_stub [895]
+                0.00    0.00      13/13          extent_rtree_leaf_elms_lookup [39]
+                0.00    0.00      13/13          extent_rtree_write_acquired.constprop.66 [40]
+                0.00    0.00      12/12          extent_interior_register [48]
+                0.00    0.00       1/7           je_rtree_ctx_data_init [49]
+-----------------------------------------------
+                0.00    0.00      13/13          extent_register_impl.constprop.65 [38]
+[39]     0.0    0.00    0.00      13         extent_rtree_leaf_elms_lookup [39]
+                0.00    0.00       2/4           je_rtree_leaf_elm_lookup_hard [53]
+-----------------------------------------------
+                0.00    0.00      13/13          extent_register_impl.constprop.65 [38]
+[40]     0.0    0.00    0.00      13         extent_rtree_write_acquired.constprop.66 [40]
+-----------------------------------------------
+                0.00    0.00      13/13          je_extent_alloc_wrapper [45]
+[41]     0.0    0.00    0.00      13         je_arena_extent_sn_next [41]
+-----------------------------------------------
+                0.00    0.00      13/13          je_extent_alloc_wrapper [45]
+[42]     0.0    0.00    0.00      13         je_base_alloc_extent [42]
+                0.00    0.00      13/17          base_alloc_impl [29]
+-----------------------------------------------
+                0.00    0.00      13/13          extent_hook_post_reentrancy [37]
+[43]     0.0    0.00    0.00      13         je_base_extent_hooks_get [43]
+-----------------------------------------------
+                0.00    0.00      13/13          je_extent_alloc_wrapper [45]
+[44]     0.0    0.00    0.00      13         je_extent_alloc [44]
+                0.00    0.00      26/871         __libc_mutex_unlock_stub [895]
+                0.00    0.00      13/13          je_extent_avail_first [46]
+-----------------------------------------------
+                0.00    0.00       1/13          je_arena_extent_alloc_large [90]
+                0.00    0.00      12/13          arena_bin_malloc_hard [47]
+[45]     0.0    0.00    0.00      13         je_extent_alloc_wrapper [45]
+                0.00    0.00      26/871         __libc_mutex_unlock_stub [895]
+                0.00    0.00      13/39          extent_recycle [21]
+                0.00    0.00      13/13          je_base_alloc_extent [42]
+                0.00    0.00      13/13          je_extent_alloc [44]
+                0.00    0.00      13/13          je_arena_extent_sn_next [41]
+                0.00    0.00      13/13          extent_register_impl.constprop.65 [38]
+                0.00    0.00      13/13          extent_alloc_core [36]
+-----------------------------------------------
+                0.00    0.00      13/13          je_extent_alloc [44]
+[46]     0.0    0.00    0.00      13         je_extent_avail_first [46]
+-----------------------------------------------
+                0.00    0.00       1/12          je_arena_malloc_hard [92]
+                0.00    0.00      11/12          je_arena_tcache_fill_small [72]
+[47]     0.0    0.00    0.00      12         arena_bin_malloc_hard [47]
+                0.00    0.00      24/871         __libc_mutex_unlock_stub [895]
+                0.00    0.00      24/26          je_extents_alloc [26]
+                0.00    0.00      12/1006        je_extent_heap_remove_first [15]
+                0.00    0.00      12/15          je_bitmap_init [33]
+                0.00    0.00      12/13          je_extent_alloc_wrapper [45]
+-----------------------------------------------
+                0.00    0.00      12/12          extent_register_impl.constprop.65 [38]
+[48]     0.0    0.00    0.00      12         extent_interior_register [48]
+-----------------------------------------------
+                0.00    0.00       1/7           je_tsd_fetch_slow [5]
+                0.00    0.00       1/7           extent_register_impl.constprop.65 [38]
+                0.00    0.00       2/7           a0ialloc [80]
+                0.00    0.00       3/7           extent_recycle [21]
+[49]     0.0    0.00    0.00       7         je_rtree_ctx_data_init [49]
+-----------------------------------------------
+                0.00    0.00       1/4           je_tcache_boot [114]
+                0.00    0.00       1/4           je_rtree_leaf_elm_lookup_hard [53]
+                0.00    0.00       1/4           je_background_thread_boot1 [98]
+                0.00    0.00       1/4           je_arena_new [93]
+[50]     0.0    0.00    0.00       4         je_b0get [50]
+-----------------------------------------------
+                0.00    0.00       1/4           je_tcache_boot [114]
+                0.00    0.00       1/4           je_rtree_leaf_elm_lookup_hard [53]
+                0.00    0.00       1/4           je_background_thread_boot1 [98]
+                0.00    0.00       1/4           je_arena_new [93]
+[51]     0.0    0.00    0.00       4         je_base_alloc [51]
+-----------------------------------------------
+                0.00    0.00       4/4           arena_decay_deadline_init [65]
+[52]     0.0    0.00    0.00       4         je_nstime_add [52]
+-----------------------------------------------
+                0.00    0.00       2/4           a0ialloc [80]
+                0.00    0.00       2/4           extent_rtree_leaf_elms_lookup [39]
+[53]     0.0    0.00    0.00       4         je_rtree_leaf_elm_lookup_hard [53]
+                0.00    0.00       4/4           memmove [55]
+                0.00    0.00       2/871         __libc_mutex_unlock_stub [895]
+                0.00    0.00       1/4           je_b0get [50]
+                0.00    0.00       1/17          base_alloc_impl [29]
+                0.00    0.00       1/4           je_base_alloc [51]
+-----------------------------------------------
+                0.00    0.00       1/4           malloc_init_hard <cycle 1> [4]
+                0.00    0.00       1/4           je_tsd_fetch_slow [5]
+                0.00    0.00       1/4           je_malloc_tsd_boot1 [1]
+                0.00    0.00       1/4           je_tsd_tcache_enabled_data_init [7]
+[54]     0.0    0.00    0.00       4         je_tsd_cleanup [54]
+-----------------------------------------------
+                0.00    0.00       4/4           je_rtree_leaf_elm_lookup_hard [53]
+[55]     0.0    0.00    0.00       4         memmove [55]
+-----------------------------------------------
+                0.00    0.00       1/3           malloc_conf_init [117]
+                0.00    0.00       2/3           __smakebuf <cycle 2> [12]
+[56]     0.0    0.00    0.00       3         getenv [56]
+                0.00    0.00       3/3           __envvarnamelen [903]
+                0.00    0.00       3/3           __readlockenv [907]
+                0.00    0.00       3/3           __findenvvar [905]
+                0.00    0.00       3/3           __unlockenv [909]
+-----------------------------------------------
+                0.00    0.00       3/3           je_arena_new [93]
+[57]     0.0    0.00    0.00       3         je_extents_init [57]
+                0.00    0.00     600/868         je_extent_heap_new [16]
+                0.00    0.00       3/309         je_malloc_mutex_init [18]
+                0.00    0.00       3/16          memset [32]
+                0.00    0.00       3/15          je_bitmap_init [33]
+-----------------------------------------------
+                0.00    0.00       3/3           __sfvwrite [911]
+[58]     0.0    0.00    0.00       3         memcpy [58]
+-----------------------------------------------
+                0.00    0.00       1/3           je_pages_boot [111]
+                0.00    0.00       2/3           je_pages_map [35]
+[59]     0.0    0.00    0.00       3         munmap [59]
+-----------------------------------------------
+                0.00    0.00       1/3           je_arena_new [93]
+                0.00    0.00       2/3           arena_decay_reinit [66]
+[60]     0.0    0.00    0.00       3         nstime_update_impl [60]
+                0.00    0.00       3/3           __clock_gettime50 [902]
+-----------------------------------------------
+                0.00    0.00       3/3           __envvarnamelen [903]
+[61]     0.0    0.00    0.00       3         strcspn [61]
+-----------------------------------------------
+                0.00    0.00       3/3           __envvarnamelen [903]
+[62]     0.0    0.00    0.00       3         strspn_x [62]
+-----------------------------------------------
+                0.00    0.00       1/3           _mcleanup [1117]
+                0.00    0.00       1/3           sysconf [79]
+                0.00    0.00       1/3           getpagesize [85]
+[63]     0.0    0.00    0.00       3         sysctl [63]
+                0.00    0.00       3/3           __sysctl [908]
+-----------------------------------------------
+                0.00    0.00       2/2           je_arena_choose_hard [89]
+[64]     0.0    0.00    0.00       2         arena_bind [64]
+                0.00    0.00       2/2           je_arena_nthreads_inc [71]
+-----------------------------------------------
+                0.00    0.00       2/2           arena_decay_reinit [66]
+[65]     0.0    0.00    0.00       2         arena_decay_deadline_init [65]
+                0.00    0.00       4/4           je_nstime_add [52]
+                0.00    0.00       2/2           je_nstime_copy [73]
+                0.00    0.00       2/2           je_nstime_ns [75]
+                0.00    0.00       2/629         je_nstime_init [17]
+-----------------------------------------------
+                0.00    0.00       2/2           je_arena_new [93]
+[66]     0.0    0.00    0.00       2         arena_decay_reinit [66]
+                0.00    0.00       4/629         je_nstime_init [17]
+                0.00    0.00       2/2           je_nstime_idivide [74]
+                0.00    0.00       2/3           nstime_update_impl [60]
+                0.00    0.00       2/2           arena_decay_deadline_init [65]
+-----------------------------------------------
+                0.00    0.00       2/2           ___start [3]
+[67]     0.0    0.00    0.00       2         atexit [67]
+-----------------------------------------------
+                0.00    0.00       2/2           je_background_thread_boot1 [98]
+[68]     0.0    0.00    0.00       2         background_thread_create_signals_masked.constprop.19 [68]
+                0.00    0.00       2/629         je_nstime_init [17]
+-----------------------------------------------
+                0.00    0.00       1/2           base_alloc_impl [29]
+                0.00    0.00       1/2           je_base_new [100]
+[69]     0.0    0.00    0.00       2         base_block_alloc [69]
+                0.00    0.00       2/15          je_extent_alloc_mmap [34]
+-----------------------------------------------
+                0.00    0.00       1/2           malloc_conf_init [117]
+                0.00    0.00       1/2           _mcleanup [1117]
+[70]     0.0    0.00    0.00       2         issetugid [70]
+-----------------------------------------------
+                0.00    0.00       2/2           arena_bind [64]
+[71]     0.0    0.00    0.00       2         je_arena_nthreads_inc [71]
+-----------------------------------------------
+                0.00    0.00       2/2           je_tcache_alloc_small_hard [76]
+[72]     0.0    0.00    0.00       2         je_arena_tcache_fill_small [72]
+                0.00    0.00      11/12          arena_bin_malloc_hard [47]
+                0.00    0.00       4/871         __libc_mutex_unlock_stub [895]
+-----------------------------------------------
+                0.00    0.00       2/2           arena_decay_deadline_init [65]
+[73]     0.0    0.00    0.00       2         je_nstime_copy [73]
+-----------------------------------------------
+                0.00    0.00       2/2           arena_decay_reinit [66]
+[74]     0.0    0.00    0.00       2         je_nstime_idivide [74]
+-----------------------------------------------
+                0.00    0.00       2/2           arena_decay_deadline_init [65]
+[75]     0.0    0.00    0.00       2         je_nstime_ns [75]
+-----------------------------------------------
+                0.00    0.00       2/2           malloc <cycle 1> [13]
+[76]     0.0    0.00    0.00       2         je_tcache_alloc_small_hard [76]
+                0.00    0.00       2/2           je_arena_tcache_fill_small [72]
+-----------------------------------------------
+                0.00    0.00       1/2           malloc_init_hard <cycle 1> [4]
+                0.00    0.00       1/2           je_tsd_tcache_enabled_data_init [7]
+[77]     0.0    0.00    0.00       2         je_tsd_slow_update [77]
+-----------------------------------------------
+                0.00    0.00       2/2           __vfprintf_unlocked_l <cycle 2> [913]
+[78]     0.0    0.00    0.00       2         localeconv_l [78]
+-----------------------------------------------
+                0.00    0.00       1/2           malloc_init_hard <cycle 1> [4]
+                0.00    0.00       1/2           je_pages_boot [111]
+[79]     0.0    0.00    0.00       2         sysconf [79]
+                0.00    0.00       1/3           sysctl [63]
+                0.00    0.00       1/1           getpagesize [85]
+-----------------------------------------------
+                0.00    0.00       1/1           je_arena_tdata_get_hard [96]
+[80]     0.0    0.00    0.00       1         a0ialloc [80]
+                0.00    0.00       2/7           je_rtree_ctx_data_init [49]
+                0.00    0.00       2/4           je_rtree_leaf_elm_lookup_hard [53]
+                0.00    0.00       1/1           je_arena_malloc_hard [92]
+-----------------------------------------------
+                0.00    0.00       1/1           je_arena_extent_alloc_large [90]
+[81]     0.0    0.00    0.00       1         arena_dalloc_junk_small_impl [81]
+-----------------------------------------------
+                0.00    0.00       1/1           je_arena_init [91]
+[82]     0.0    0.00    0.00       1         arena_init_locked [82]
+-----------------------------------------------
+                0.00    0.00       1/1           je_arena_init [91]
+[83]     0.0    0.00    0.00       1         arena_new_create_background_thread [83]
+-----------------------------------------------
+                0.00    0.00       1/1           ___start [3]
+[84]     0.0    0.00    0.00       1         exit [84]
+                0.00    0.00       1/1           __cxa_finalize [914]
+-----------------------------------------------
+                0.00    0.00       1/1           sysconf [79]
+[85]     0.0    0.00    0.00       1         getpagesize [85]
+                0.00    0.00       1/3           sysctl [63]
+-----------------------------------------------
+                0.00    0.00       1/1           isatty [87]
+[86]     0.0    0.00    0.00       1         ioctl [86]
+-----------------------------------------------
+                0.00    0.00       1/1           __smakebuf <cycle 2> [12]
+[87]     0.0    0.00    0.00       1         isatty [87]
+                0.00    0.00       1/1           ioctl [86]
+                0.00    0.00       1/1           tcgetattr [125]
+-----------------------------------------------
+                0.00    0.00       1/1           malloc_init_hard_a0_locked [118]
+[88]     0.0    0.00    0.00       1         je_arena_boot [88]
+                0.00    0.00      35/36          je_div_init [25]
+-----------------------------------------------
+                0.00    0.00       1/1           malloc <cycle 1> [13]
+[89]     0.0    0.00    0.00       1         je_arena_choose_hard [89]
+                0.00    0.00       2/2           arena_bind [64]
+-----------------------------------------------
+                0.00    0.00       1/1           je_large_palloc [107]
+[90]     0.0    0.00    0.00       1         je_arena_extent_alloc_large [90]
+                0.00    0.00       2/26          je_extents_alloc [26]
+                0.00    0.00       1/13          je_extent_alloc_wrapper [45]
+                0.00    0.00       1/1           arena_dalloc_junk_small_impl [81]
+-----------------------------------------------
+                0.00    0.00       1/1           malloc_init_hard_a0_locked [118]
+[91]     0.0    0.00    0.00       1         je_arena_init [91]
+                0.00    0.00       2/871         __libc_mutex_unlock_stub [895]
+                0.00    0.00       1/1           je_arena_new [93]
+                0.00    0.00       1/1           arena_init_locked [82]
+                0.00    0.00       1/1           arena_new_create_background_thread [83]
+-----------------------------------------------
+                0.00    0.00       1/1           a0ialloc [80]
+[92]     0.0    0.00    0.00       1         je_arena_malloc_hard [92]
+                0.00    0.00       2/871         __libc_mutex_unlock_stub [895]
+                0.00    0.00       1/12          arena_bin_malloc_hard [47]
+-----------------------------------------------
+                0.00    0.00       1/1           je_arena_init [91]
+[93]     0.0    0.00    0.00       1         je_arena_new [93]
+                0.00    0.00      36/36          je_bin_init [24]
+                0.00    0.00       6/309         je_malloc_mutex_init [18]
+                0.00    0.00       3/3           je_extents_init [57]
+                0.00    0.00       2/2           arena_decay_reinit [66]
+                0.00    0.00       1/4           je_b0get [50]
+                0.00    0.00       1/17          base_alloc_impl [29]
+                0.00    0.00       1/4           je_base_alloc [51]
+                0.00    0.00       1/1           je_extent_dss_prec_get [105]
+                0.00    0.00       1/1           je_extent_avail_new [102]
+                0.00    0.00       1/1           je_arena_set [95]
+                0.00    0.00       1/629         je_nstime_init [17]
+                0.00    0.00       1/3           nstime_update_impl [60]
+-----------------------------------------------
+                0.00    0.00       1/1           je_tsd_tcache_data_init [6]
+[94]     0.0    0.00    0.00       1         je_arena_palloc [94]
+                0.00    0.00       1/1           je_large_palloc [107]
+                0.00    0.00       1/1           je_large_malloc [106]
+-----------------------------------------------
+                0.00    0.00       1/1           je_arena_new [93]
+[95]     0.0    0.00    0.00       1         je_arena_set [95]
+-----------------------------------------------
+                0.00    0.00       1/1           je_large_palloc [107]
+[96]     0.0    0.00    0.00       1         je_arena_tdata_get_hard [96]
+                0.00    0.00       1/1           a0ialloc [80]
+-----------------------------------------------
+                0.00    0.00       1/1           malloc_init_hard <cycle 1> [4]
+[97]     0.0    0.00    0.00       1         je_background_thread_boot0 [97]
+-----------------------------------------------
+                0.00    0.00       1/1           malloc_init_hard <cycle 1> [4]
+[98]     0.0    0.00    0.00       1         je_background_thread_boot1 [98]
+                0.00    0.00       4/871         __libc_mutex_unlock_stub [895]
+                0.00    0.00       3/309         je_malloc_mutex_init [18]
+                0.00    0.00       2/629         je_nstime_init [17]
+                0.00    0.00       2/2           background_thread_create_signals_masked.constprop.19 [68]
+                0.00    0.00       2/347         __libc_mutex_init [897]
+                0.00    0.00       2/20          __libc_cond_init_stub [899]
+                0.00    0.00       1/4           je_b0get [50]
+                0.00    0.00       1/17          base_alloc_impl [29]
+                0.00    0.00       1/4           je_base_alloc [51]
+-----------------------------------------------
+                0.00    0.00       1/1           malloc_init_hard_a0_locked [118]
+[99]     0.0    0.00    0.00       1         je_base_boot [99]
+                0.00    0.00       1/1           je_base_new [100]
+-----------------------------------------------
+                0.00    0.00       1/1           je_base_boot [99]
+[100]    0.0    0.00    0.00       1         je_base_new [100]
+                0.00    0.00     232/868         je_extent_heap_new [16]
+                0.00    0.00       1/2           base_block_alloc [69]
+                0.00    0.00       1/309         je_malloc_mutex_init [18]
+                0.00    0.00       1/18          base_extent_bump_alloc_post [27]
+-----------------------------------------------
+                0.00    0.00       1/1           malloc_init_hard_a0_locked [118]
+[101]    0.0    0.00    0.00       1         je_ctl_boot [101]
+                0.00    0.00       1/309         je_malloc_mutex_init [18]
+-----------------------------------------------
+                0.00    0.00       1/1           je_arena_new [93]
+[102]    0.0    0.00    0.00       1         je_extent_avail_new [102]
+-----------------------------------------------
+                0.00    0.00       1/1           malloc_init_hard_a0_locked [118]
+[103]    0.0    0.00    0.00       1         je_extent_boot [103]
+                0.00    0.00       1/309         je_malloc_mutex_init [18]
+                0.00    0.00       1/1           je_rtree_new [112]
+                0.00    0.00       1/1           je_mutex_pool_init [110]
+                0.00    0.00       1/1           je_extent_dss_boot [104]
+-----------------------------------------------
+                0.00    0.00       1/1           je_extent_boot [103]
+[104]    0.0    0.00    0.00       1         je_extent_dss_boot [104]
+                0.00    0.00       1/1           sbrk [123]
+-----------------------------------------------
+                0.00    0.00       1/1           je_arena_new [93]
+[105]    0.0    0.00    0.00       1         je_extent_dss_prec_get [105]
+-----------------------------------------------
+                0.00    0.00       1/1           je_arena_palloc [94]
+[106]    0.0    0.00    0.00       1         je_large_malloc [106]
+-----------------------------------------------
+                0.00    0.00       1/1           je_arena_palloc [94]
+[107]    0.0    0.00    0.00       1         je_large_palloc [107]
+                0.00    0.00       1/1           je_arena_extent_alloc_large [90]
+                0.00    0.00       1/1           je_arena_tdata_get_hard [96]
+-----------------------------------------------
+                0.00    0.00       1/1           je_tsd_tcache_data_init [6]
+[108]    0.0    0.00    0.00       1         je_malloc_initialized [108]
+-----------------------------------------------
+                0.00    0.00       1/1           malloc_init_hard <cycle 1> [4]
+[109]    0.0    0.00    0.00       1         je_malloc_mutex_boot [109]
+-----------------------------------------------
+                0.00    0.00       1/1           je_extent_boot [103]
+[110]    0.0    0.00    0.00       1         je_mutex_pool_init [110]
+                0.00    0.00     256/309         je_malloc_mutex_init [18]
+-----------------------------------------------
+                0.00    0.00       1/1           malloc_init_hard_a0_locked [118]
+[111]    0.0    0.00    0.00       1         je_pages_boot [111]
+                0.00    0.00       1/2           sysconf [79]
+                0.00    0.00       1/17          os_pages_map [31]
+                0.00    0.00       1/1           madvise [116]
+                0.00    0.00       1/3           munmap [59]
+-----------------------------------------------
+                0.00    0.00       1/1           je_extent_boot [103]
+[112]    0.0    0.00    0.00       1         je_rtree_new [112]
+-----------------------------------------------
+                0.00    0.00       1/1           je_tsd_tcache_data_init [6]
+[113]    0.0    0.00    0.00       1         je_tcache_arena_associate [113]
+                0.00    0.00       1/871         __libc_mutex_unlock_stub [895]
+-----------------------------------------------
+                0.00    0.00       1/1           malloc_init_hard_a0_locked [118]
+[114]    0.0    0.00    0.00       1         je_tcache_boot [114]
+                0.00    0.00       1/309         je_malloc_mutex_init [18]
+                0.00    0.00       1/4           je_b0get [50]
+                0.00    0.00       1/17          base_alloc_impl [29]
+                0.00    0.00       1/4           je_base_alloc [51]
+-----------------------------------------------
+                0.00    0.00       1/1           ___start [3]
+[115]    0.0    0.00    0.00       1         jemalloc_constructor [115]
+-----------------------------------------------
+                0.00    0.00       1/1           je_pages_boot [111]
+[116]    0.0    0.00    0.00       1         madvise [116]
+-----------------------------------------------
+                0.00    0.00       1/1           malloc_init_hard_a0_locked [118]
+[117]    0.0    0.00    0.00       1         malloc_conf_init [117]
+                0.00    0.00       2/3           __errno [904]
+                0.00    0.00       1/2           issetugid [70]
+                0.00    0.00       1/3           getenv [56]
+                0.00    0.00       1/1           readlink [122]
+-----------------------------------------------
+                0.00    0.00       1/1           malloc_init_hard <cycle 1> [4]
+[118]    0.0    0.00    0.00       1         malloc_init_hard_a0_locked [118]
+                0.00    0.00       1/1           malloc_conf_init [117]
+                0.00    0.00       1/1           je_pages_boot [111]
+                0.00    0.00       1/1           je_base_boot [99]
+                0.00    0.00       1/1           je_extent_boot [103]
+                0.00    0.00       1/1           je_ctl_boot [101]
+                0.00    0.00       1/36          je_div_init [25]
+                0.00    0.00       1/1           je_arena_boot [88]
+                0.00    0.00       1/1           je_tcache_boot [114]
+                0.00    0.00       1/309         je_malloc_mutex_init [18]
+                0.00    0.00       1/1           je_arena_init [91]
+-----------------------------------------------
+                0.00    0.00       1/1           __sfvwrite [911]
+[119]    0.0    0.00    0.00       1         memchr [119]
+-----------------------------------------------
+                0.00    0.00       1/1           moncontrol [583]
+[120]    0.0    0.00    0.00       1         profil [120]
+-----------------------------------------------
+                                   1             malloc_init_hard <cycle 1> [4]
+[121]    0.0    0.00    0.00       1         pthread_atfork <cycle 1> [121]
+                0.00    0.00       2/871         __libc_mutex_unlock_stub [895]
+                                   2             malloc <cycle 1> [13]
+-----------------------------------------------
+                0.00    0.00       1/1           malloc_conf_init [117]
+[122]    0.0    0.00    0.00       1         readlink [122]
+-----------------------------------------------
+                0.00    0.00       1/1           je_extent_dss_boot [104]
+[123]    0.0    0.00    0.00       1         sbrk [123]
+-----------------------------------------------
+                                   1             __smakebuf <cycle 2> [12]
+[124]    0.0    0.00    0.00       1         snprintf <cycle 2> [124]
+                0.00    0.00       1/1           vsnprintf [126]
+                                   1             vsnprintf_l <cycle 2> [127]
+-----------------------------------------------
+                0.00    0.00       1/1           isatty [87]
+[125]    0.0    0.00    0.00       1         tcgetattr [125]
+-----------------------------------------------
+                0.00    0.00       1/1           snprintf <cycle 2> [124]
+[126]    0.0    0.00    0.00       1         vsnprintf [126]
+-----------------------------------------------
+                                   1             snprintf <cycle 2> [124]
+[127]    0.0    0.00    0.00       1         vsnprintf_l <cycle 2> [127]
+                0.00    0.00       2/347         __libc_mutex_init [897]
+                0.00    0.00       1/20          __libc_cond_init_stub [899]
+                                   1             __vfprintf_unlocked_l <cycle 2> [913]
+-----------------------------------------------
+                0.00    0.00       1/871         __cxa_finalize [914]
+                0.00    0.00       1/871         je_tcache_arena_associate [113]
+                0.00    0.00       1/871         je_tsd_tcache_data_init [6]
+                0.00    0.00       2/871         je_arena_init [91]
+                0.00    0.00       2/871         pthread_atfork <cycle 1> [121]
+                0.00    0.00       2/871         je_rtree_leaf_elm_lookup_hard [53]
+                0.00    0.00       2/871         je_arena_malloc_hard [92]
+                0.00    0.00       3/871         __readlockenv [907]
+                0.00    0.00       3/871         __unlockenv [909]
+                0.00    0.00       4/871         __cxa_atexit_internal [910]
+                0.00    0.00       4/871         je_background_thread_boot1 [98]
+                0.00    0.00       4/871         je_arena_tcache_fill_small [72]
+                0.00    0.00       8/871         malloc_init_hard <cycle 1> [4]
+                0.00    0.00      24/871         arena_bin_malloc_hard [47]
+                0.00    0.00      26/871         extent_register_impl.constprop.65 [38]
+                0.00    0.00      26/871         je_extent_alloc [44]
+                0.00    0.00      26/871         je_extent_alloc_wrapper [45]
+                0.00    0.00      36/871         base_alloc_impl [29]
+                0.00    0.00      78/871         extent_recycle [21]
+                0.00    0.00     618/871         je_malloc_mutex_init [18]
+[895]    0.0    0.00    0.00     871         __libc_mutex_unlock_stub [895]
+-----------------------------------------------
+                0.00    0.00     618/618         je_malloc_mutex_init [18]
+[896]    0.0    0.00    0.00     618         __libc_mutexattr_destroy [896]
+-----------------------------------------------
+                0.00    0.00       2/347         vsnprintf_l <cycle 2> [127]
+                0.00    0.00       2/347         je_background_thread_boot1 [98]
+                0.00    0.00      34/347         __sinit [920]
+                0.00    0.00     309/347         je_malloc_mutex_init [18]
+[897]    0.0    0.00    0.00     347         __libc_mutex_init [897]
+-----------------------------------------------
+                0.00    0.00     309/309         je_malloc_mutex_init [18]
+[898]    0.0    0.00    0.00     309         __libc_mutexattr_settype_stub [898]
+-----------------------------------------------
+                0.00    0.00       1/20          vsnprintf_l <cycle 2> [127]
+                0.00    0.00       2/20          je_background_thread_boot1 [98]
+                0.00    0.00      17/20          __sinit [920]
+[899]    0.0    0.00    0.00      20         __libc_cond_init_stub [899]
+-----------------------------------------------
+                0.00    0.00      17/17          mmap [30]
+[900]    0.0    0.00    0.00      17         __mmap [900]
+-----------------------------------------------
+                0.00    0.00       3/6           __readlockenv [907]
+                0.00    0.00       3/6           __unlockenv [909]
+[901]    0.0    0.00    0.00       6         __libc_rwlock_trywrlock [901]
+-----------------------------------------------
+                0.00    0.00       3/3           nstime_update_impl [60]
+[902]    0.0    0.00    0.00       3         __clock_gettime50 [902]
+-----------------------------------------------
+                0.00    0.00       3/3           getenv [56]
+[903]    0.0    0.00    0.00       3         __envvarnamelen [903]
+                0.00    0.00       3/3           strspn_x [62]
+                0.00    0.00       3/3           strcspn [61]
+-----------------------------------------------
+                0.00    0.00       1/3           __cerror [933]
+                0.00    0.00       2/3           malloc_conf_init [117]
+[904]    0.0    0.00    0.00       3         __errno [904]
+-----------------------------------------------
+                0.00    0.00       3/3           getenv [56]
+[905]    0.0    0.00    0.00       3         __findenvvar [905]
+                0.00    0.00       3/3           __getenvslot [906]
+-----------------------------------------------
+                0.00    0.00       3/3           __findenvvar [905]
+[906]    0.0    0.00    0.00       3         __getenvslot [906]
+                0.00    0.00      51/51          strncmp [20]
+-----------------------------------------------
+                0.00    0.00       3/3           getenv [56]
+[907]    0.0    0.00    0.00       3         __readlockenv [907]
+                0.00    0.00       3/871         __libc_mutex_unlock_stub [895]
+                0.00    0.00       3/6           __libc_rwlock_trywrlock [901]
+-----------------------------------------------
+                0.00    0.00       3/3           sysctl [63]
+[908]    0.0    0.00    0.00       3         __sysctl [908]
+-----------------------------------------------
+                0.00    0.00       3/3           getenv [56]
+[909]    0.0    0.00    0.00       3         __unlockenv [909]
+                0.00    0.00       3/871         __libc_mutex_unlock_stub [895]
+                0.00    0.00       3/6           __libc_rwlock_trywrlock [901]
+-----------------------------------------------
+                0.00    0.00       2/2           ___start [3]
+[910]    0.0    0.00    0.00       2         __cxa_atexit_internal [910]
+                0.00    0.00       4/871         __libc_mutex_unlock_stub [895]
+-----------------------------------------------
+                0.00    0.00       2/2           __sprint [912]
+[911]    0.0    0.00    0.00       2         __sfvwrite [911]
+                0.00    0.00       3/3           memcpy [58]
+                0.00    0.00       1/1           memchr [119]
+-----------------------------------------------
+                0.00    0.00       2/2           __vfprintf_unlocked_l <cycle 2> [913]
+[912]    0.0    0.00    0.00       2         __sprint [912]
+                0.00    0.00       2/2           __sfvwrite [911]
+-----------------------------------------------
+                                   1             vsnprintf_l <cycle 2> [127]
+                0.00    0.00       1/1           vfprintf [11]
+[913]    0.0    0.00    0.00       2         __vfprintf_unlocked_l <cycle 2> [913]
+                0.00    0.00       2/2           localeconv_l [78]
+                0.00    0.00       2/2           __sprint [912]
+                0.00    0.00       1/1           __ultoa [923]
+                                   1             __swsetup <cycle 2> [922]
+-----------------------------------------------
+                0.00    0.00       1/1           exit [84]
+[914]    0.0    0.00    0.00       1         __cxa_finalize [914]
+                0.00    0.00       1/871         __libc_mutex_unlock_stub [895]
+-----------------------------------------------
+                0.00    0.00       1/1           vfprintf [11]
+[915]    0.0    0.00    0.00       1         __flockfile_internal [915]
+-----------------------------------------------
+                0.00    0.00       1/1           __swhatbuf [921]
+[916]    0.0    0.00    0.00       1         __fstat50 [916]
+-----------------------------------------------
+                0.00    0.00       1/1           vfprintf [11]
+[917]    0.0    0.00    0.00       1         __funlockfile_internal [917]
+-----------------------------------------------
+                0.00    0.00       1/1           je_malloc_tsd_boot0 [14]
+[918]    0.0    0.00    0.00       1         __libc_thr_keycreate_stub [918]
+-----------------------------------------------
+                0.00    0.00       1/1           je_tsd_fetch_slow [5]
+[919]    0.0    0.00    0.00       1         __libc_thr_setspecific [919]
+-----------------------------------------------
+                0.00    0.00       1/1           __swsetup <cycle 2> [922]
+[920]    0.0    0.00    0.00       1         __sinit [920]
+                0.00    0.00      34/347         __libc_mutex_init [897]
+                0.00    0.00      17/20          __libc_cond_init_stub [899]
+-----------------------------------------------
+                0.00    0.00       1/1           __smakebuf <cycle 2> [12]
+[921]    0.0    0.00    0.00       1         __swhatbuf [921]
+                0.00    0.00       1/1           __fstat50 [916]
+-----------------------------------------------
+                                   1             __vfprintf_unlocked_l <cycle 2> [913]
+[922]    0.0    0.00    0.00       1         __swsetup <cycle 2> [922]
+                0.00    0.00       1/1           __sinit [920]
+                                   1             __smakebuf <cycle 2> [12]
+-----------------------------------------------
+                0.00    0.00       1/1           __vfprintf_unlocked_l <cycle 2> [913]
+[923]    0.0    0.00    0.00       1         __ultoa [923]
+-----------------------------------------------
+                0.00    0.00       1/1           ___start [3]
+[924]    0.0    0.00    0.00       1         _libc_init [924]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+ [902] __clock_gettime50      [22] extent_size_quantize_ceil [52] je_nstime_add
+ [910] __cxa_atexit_internal  [23] extent_size_quantize_floor [73] je_nstime_copy
+ [914] __cxa_finalize         [56] getenv                 [74] je_nstime_idivide
+ [903] __envvarnamelen        [85] getpagesize            [17] je_nstime_init
+ [904] __errno                [86] ioctl                  [75] je_nstime_ns
+ [905] __findenvvar           [87] isatty                [111] je_pages_boot
+ [915] __flockfile_internal   [70] issetugid              [35] je_pages_map
+ [916] __fstat50              [88] je_arena_boot          [49] je_rtree_ctx_data_init
+ [917] __funlockfile_internal [89] je_arena_choose_hard   [53] je_rtree_leaf_elm_lookup_hard
+ [906] __getenvslot           [90] je_arena_extent_alloc_large [112] je_rtree_new
+ [899] __libc_cond_init_stub  [41] je_arena_extent_sn_next [76] je_tcache_alloc_small_hard
+ [897] __libc_mutex_init      [91] je_arena_init         [113] je_tcache_arena_associate
+ [895] __libc_mutex_unlock_stub [92] je_arena_malloc_hard [114] je_tcache_boot
+ [896] __libc_mutexattr_destroy [93] je_arena_new         [54] je_tsd_cleanup
+ [898] __libc_mutexattr_settype_stub [71] je_arena_nthreads_inc [5] je_tsd_fetch_slow
+ [901] __libc_rwlock_trywrlock [94] je_arena_palloc       [77] je_tsd_slow_update
+ [918] __libc_thr_keycreate_stub [95] je_arena_set         [6] je_tsd_tcache_data_init
+ [919] __libc_thr_setspecific [72] je_arena_tcache_fill_small [7] je_tsd_tcache_enabled_data_init
+ [900] __mmap                 [96] je_arena_tdata_get_hard [115] jemalloc_constructor
+ [907] __readlockenv          [50] je_b0get               [78] localeconv_l
+ [911] __sfvwrite             [97] je_background_thread_boot0 [116] madvise
+ [920] __sinit                [98] je_background_thread_boot1 [9] main
+  [12] __smakebuf             [51] je_base_alloc          [13] malloc
+ [912] __sprint               [42] je_base_alloc_extent  [117] malloc_conf_init
+ [921] __swhatbuf             [99] je_base_boot            [4] malloc_init_hard
+ [922] __swsetup              [43] je_base_extent_hooks_get [118] malloc_init_hard_a0_locked
+ [908] __sysctl              [100] je_base_new           [119] memchr
+ [923] __ultoa                [24] je_bin_init            [58] memcpy
+ [909] __unlockenv            [33] je_bitmap_init         [55] memmove
+ [913] __vfprintf_unlocked_l [101] je_ctl_boot            [32] memset
+ [924] _libc_init             [25] je_div_init            [30] mmap
+  [80] a0ialloc               [44] je_extent_alloc        [59] munmap
+  [47] arena_bin_malloc_hard  [34] je_extent_alloc_mmap   [19] mutex_prof_data_init
+  [64] arena_bind             [45] je_extent_alloc_wrapper [60] nstime_update_impl
+  [81] arena_dalloc_junk_small_impl [46] je_extent_avail_first [31] os_pages_map
+  [65] arena_decay_deadline_init [102] je_extent_avail_new [10] printf
+  [66] arena_decay_reinit    [103] je_extent_boot        [120] profil
+  [82] arena_init_locked     [104] je_extent_dss_boot    [121] pthread_atfork
+  [83] arena_new_create_background_thread [105] je_extent_dss_prec_get [122] readlink
+  [67] atexit                 [28] je_extent_heap_insert [123] sbrk
+  [68] background_thread_create_signals_masked.constprop.19 [16] je_extent_heap_new [124] snprintf
+  [29] base_alloc_impl        [15] je_extent_heap_remove_first [61] strcspn
+  [69] base_block_alloc       [26] je_extents_alloc       [20] strncmp
+  [27] base_extent_bump_alloc_post [57] je_extents_init   [62] strspn_x
+  [84] exit                  [106] je_large_malloc        [79] sysconf
+  [36] extent_alloc_core     [107] je_large_palloc        [63] sysctl
+  [37] extent_hook_post_reentrancy [108] je_malloc_initialized [125] tcgetattr
+  [48] extent_interior_register [109] je_malloc_mutex_boot [11] vfprintf
+  [21] extent_recycle         [18] je_malloc_mutex_init  [126] vsnprintf
+  [38] extent_register_impl.constprop.65 [14] je_malloc_tsd_boot0 [127] vsnprintf_l
+  [39] extent_rtree_leaf_elms_lookup [1] je_malloc_tsd_boot1 [2] <cycle 1>
+  [40] extent_rtree_write_acquired.constprop.66 [110] je_mutex_pool_init [8] <cycle 2>
