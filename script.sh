@@ -1,3 +1,4 @@
+#!/usr/pkg/bin/bash
 out=`./matrx`
 
 out2=`readelf -e matrx`
@@ -12,32 +13,36 @@ OUT=${out2%Key to Flags*}
 OUT2=${OUT#*Headers:}
 #echo $OUT2
 match=0
+result=""
 i=0
 j=0
 declare -a arr=();
 k=0
 for one_thing in $OUT2; do
-       # echo $one_thing
+       #echo $one_thing
+        
+        if [ $i -eq 4 -a $j -ge 27 ]; then
+		integer=`echo $(( 16#$one_thing ))`
+	
+		
+		result=$result","$integer
+        fi	
 	if [[ $one_thing =~ .*[0-9]*\] ]]; then
 		if [ $match -gt 1 ]; then 
-
-			#echo "index i  $i index j $j"
 			i=0
-			`echo ${arr[*]} >> test.csv`
-
-			arr=()
-
-		else
-			arr=()
 		fi
 		match=$((match+1))
 	else
-		if [ $i -ne 0 ]; then
-			arr[$i]=','
-		fi
-		arr[$i]=${arr[$i]}$one_thing
 		i=$((i+1))
 	fi
 	j=$((j+1))
 	
 	done
+a=$1
+b=$2
+c=$3
+o=`./matrx $a $b $c`
+result=$a","$b","$c$result","$o
+echo $result
+`echo $result >>test.csv`
+
